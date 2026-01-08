@@ -2,6 +2,9 @@ import React from 'react';
 import { Github, Linkedin, Mail, User } from 'lucide-react';
 import '../styles/Team.css';
 
+/*team member names*/
+
+
 const Team = () => {
   const members = [
     {
