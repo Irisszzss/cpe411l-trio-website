@@ -14,7 +14,18 @@ const Waitlist = () => {
             <p>We are currently in the prototyping phase. Sign up for beta access.</p>
             <form onSubmit={(e) => {e.preventDefault(); setSubmitted(true)}} className="waitlist-form">
               <input type="email" placeholder="Enter your email" required />
-              <button type="submit">Join Now <ArrowRight size={18} /></button>
+              <button 
+  type="submit" 
+  style={{ 
+    display: 'inline-flex', 
+    alignItems: 'center', 
+    justifyContent: 'center', 
+    gap: '8px', 
+    whiteSpace: 'nowrap' 
+  }}
+>
+  Join Now <ArrowRight size={18} />
+</button>
             </form>
           </>
         ) : (
