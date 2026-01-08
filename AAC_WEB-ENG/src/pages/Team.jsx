@@ -20,13 +20,13 @@ const Team = () => {
       color: "#0ea5e9"
     },
     {
-      name: "Allysa Mariz Hipolito",
+      name: "Colleen Iris Jones",
       role: "Firmware Engineer",
       desc: "Optimized ESP32 Bluetooth latency.",
       color: "#2563eb"
     },
     {
-      name: "Colleen Iris Jones",
+      name: "Allysa Mariz Hipolito",
       role: "Research Head",
       desc: "Conducted classroom usability testing.",
       color: "#0ea5e9"
