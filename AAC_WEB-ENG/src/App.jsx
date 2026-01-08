@@ -6,6 +6,7 @@ import About from './pages/About';
 import Waitlist from './pages/Waitlist';
 import Technology from './pages/Technology';
 import Team from './pages/Team';
+import FAQ from './pages/FAQ';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Route path="/technology" element={<Technology />} />
           <Route path="/team" element={<Team />} />
           <Route path="/waitlist" element={<Waitlist />} />
+          <Route path="/faq" element={<FAQ />} />
         </Routes>
       </Layout>
     </Router>

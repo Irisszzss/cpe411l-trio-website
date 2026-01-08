@@ -15,6 +15,7 @@ const Navbar = () => {
         <Link to="/about" onClick={() => setIsOpen(false)}>Features</Link>
         <Link to="/technology" onClick={() => setIsOpen(false)}>Specs</Link>
         <Link to="/team" onClick={() => setIsOpen(false)}>Team</Link>
+        <Link to="/faq" onClick={() => setIsOpen(false)}>FAQ</Link>
         <Link to="/waitlist" onClick={() => setIsOpen(false)}>Waitlist</Link>
         <Link to="/waitlist" className="nav-cta" onClick={() => setIsOpen(false)}>Get Access</Link>
       </div>
