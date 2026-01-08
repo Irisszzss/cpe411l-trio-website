@@ -2,6 +2,7 @@ import React from 'react';
 import { HelpCircle, MessageCircle } from 'lucide-react';
 import '../styles/FAQ.css';
 
+/*faq section*/
 const FAQ = () => {
   const faqs = [
     {
