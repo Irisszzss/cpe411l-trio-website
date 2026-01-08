@@ -7,12 +7,27 @@
 .logo { font-weight: 800; font-size: 1.5rem; color: var(--primary); letter-spacing: -1px; }
 .nav-links { display: flex; align-items: center; gap: 2rem; }
 .nav-links a { text-decoration: none; color: var(--dark); font-weight: 500; transition: 0.3s; }
-.nav-links a:hover { color: var(--primary); }
-.nav-cta {
-  background: var(--primary); color: white !important; padding: 0.6rem 1.4rem;
-  border-radius: 50px; transition: transform 0.2s;
+/* src/styles/Navbar.css */
+
+/* 1. Standard Links (Home, Features, etc.) */
+.nav-links a:hover { 
+  color: var(--accent); /* Text turns ORANGE on hover */
 }
-.nav-cta:hover { transform: translateY(-2px); opacity: 0.9; }
+
+/* 2. The "Get Access" CTA Button */
+.nav-links .nav-cta {
+  background: var(--primary); /* Blue by default */
+  color: white !important; 
+  padding: 0.6rem 1.4rem;
+  border-radius: 50px; 
+  transition: all 0.2s ease;
+}
+
+.nav-links .nav-cta:hover { 
+  background: var(--accent); /* Button turns ORANGE on hover */
+  transform: translateY(-2px); 
+  opacity: 1; 
+}
 
 /* Mobile Menu */
 .menu-toggle { display: none; cursor: pointer; flex-direction: column; gap: 5px; }
