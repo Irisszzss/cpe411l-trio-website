@@ -1,44 +1,223 @@
-/* Hero */
-.hero { display: flex; align-items: center; justify-content: space-between; padding: 4rem 5%; min-height: 85vh; }
-.hero-content { max-width: 600px; }
-.hero h1 { font-size: 3.5rem; line-height: 1.1; margin-bottom: 1.5rem; }
-.highlight { color: var(--primary); }
-.hero p { font-size: 1.25rem; color: var(--gray); margin-bottom: 2rem; }
+/* --- HERO SECTION --- */
+.hero { 
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between; 
+  padding: 4rem 5%; 
+  min-height: 85vh; 
+  gap: 2rem; /* Adds space between text and blob */
+}
+
+.hero-content { 
+  max-width: 600px; 
+  flex: 1; /* Ensures text takes available space */
+}
+
+.hero h1 { 
+  font-size: 3.5rem; 
+  line-height: 1.1; 
+  margin-bottom: 1.5rem; 
+}
+
+.highlight { 
+  color: var(--primary); 
+}
+
+.hero p { 
+  font-size: 1.25rem; 
+  color: var(--gray); 
+  margin-bottom: 2rem; 
+}
+
+/* Buttons */
 .cta-btn {
-  display: inline-block; padding: 1rem 2rem; border-radius: 50px; font-weight: 600; 
-  text-decoration: none; transition: transform 0.2s; margin-right: 1rem;
+  display: inline-block; 
+  padding: 1rem 2rem; 
+  border-radius: 50px; 
+  font-weight: 600; 
+  text-decoration: none; 
+  transition: transform 0.2s; 
+  margin-right: 1rem;
 }
-.cta-btn.primary { background: var(--primary); color: white; box-shadow: 0 10px 20px rgba(37, 99, 235, 0.2); }
-.cta-btn.secondary { background: white; color: var(--dark); border: 1px solid #e2e8f0; }
-.cta-btn:hover { transform: translateY(-3px); }
 
-/* Visual Blob */
-.hero-visual-container { display: flex; justify-content: center; width: 50%; }
+.cta-btn.primary { 
+  background: var(--primary); 
+  color: white; 
+  box-shadow: 0 10px 20px rgba(37, 99, 235, 0.2); 
+}
+
+.cta-btn.secondary { 
+  background: white; 
+  color: var(--dark); 
+  border: 1px solid #e2e8f0; 
+}
+
+.cta-btn:hover { 
+  transform: translateY(-3px); 
+}
+
+/* --- VISUAL BLOB --- */
+.hero-visual-container { 
+  display: flex; 
+  justify-content: center; 
+  width: 50%; 
+  position: relative; /* Helps contain the blob */
+}
+
 .hero-blob {
-  width: 400px; height: 400px; background: linear-gradient(135deg, var(--primary), var(--accent));
-  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; display: flex; align-items: center; justify-content: center;
-  animation: morph 8s ease-in-out infinite; box-shadow: 0 20px 40px rgba(37, 99, 235, 0.3);
+  width: 400px; 
+  height: 400px; 
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+  animation: morph 8s ease-in-out infinite; 
+  box-shadow: 0 20px 40px rgba(37, 99, 235, 0.3);
+  
+  /* Make blob responsive */
+  max-width: 100%;
 }
-.blob-text { color: white; font-weight: 800; font-size: 2rem; }
 
-/* Grid/About */
-.page-container { padding: 4rem 5%; }
-.section-header { text-align: center; margin-bottom: 4rem; max-width: 600px; margin: 0 auto 4rem auto; }
-.section-header h2 { font-size: 2.5rem; margin-bottom: 1rem; }
-.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; }
-.card { padding: 2rem; background: white; border-radius: 16px; border: 1px solid #e2e8f0; transition: 0.3s; }
-.card:hover { border-color: var(--primary); transform: translateY(-5px); }
-.icon-box { margin-bottom: 1rem; color: var(--primary); }
+.blob-text { 
+  color: white; 
+  font-weight: 800; 
+  font-size: 2rem; 
+  text-align: center;
+}
 
-/* Waitlist */
-.waitlist-page { min-height: 80vh; display: flex; align-items: center; justify-content: center; background: var(--dark); color: white; padding: 2rem; }
-.waitlist-box { text-align: center; max-width: 500px; width: 100%; }
-.waitlist-form { display: flex; gap: 10px; margin-top: 2rem; }
-.waitlist-form input { flex: 1; padding: 1rem; border-radius: 8px; border: none; }
-.waitlist-form button { padding: 1rem; background: var(--primary); color: white; border: none; border-radius: 8px; font-weight: 600; }
+/* --- GRID / SECTIONS --- */
+.page-container { 
+  padding: 4rem 5%; 
+}
+
+.section-header { 
+  text-align: center; 
+  margin: 0 auto 4rem auto; 
+  max-width: 600px; 
+}
+
+.section-header h2 { 
+  font-size: 2.5rem; 
+  margin-bottom: 1rem; 
+}
+
+.grid { 
+  display: grid; 
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+  gap: 2rem; 
+}
+
+.card { 
+  padding: 2rem; 
+  background: white; 
+  border-radius: 16px; 
+  border: 1px solid #e2e8f0; 
+  transition: 0.3s; 
+}
+
+.card:hover { 
+  border-color: var(--primary); 
+  transform: translateY(-5px); 
+}
+
+.icon-box { 
+  margin-bottom: 1rem; 
+  color: var(--primary); 
+}
+
+/* --- WAITLIST --- */
+.waitlist-page { 
+  min-height: 80vh; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  background: var(--dark); 
+  color: white; 
+  padding: 2rem; 
+}
+
+.waitlist-box { 
+  text-align: center; 
+  max-width: 500px; 
+  width: 100%; 
+}
+
+.waitlist-form { 
+  display: flex; 
+  gap: 10px; 
+  margin-top: 2rem; 
+}
+
+.waitlist-form input { 
+  flex: 1; 
+  padding: 1rem; 
+  border-radius: 8px; 
+  border: none; 
+}
+
+.waitlist-form button { 
+  padding: 1rem; 
+  background: var(--primary); 
+  color: white; 
+  border: none; 
+  border-radius: 8px; 
+  font-weight: 600; 
+  cursor: pointer;
+}
+
+/* --- MOBILE RESPONSIVENESS (The Important Part) --- */
+@media (max-width: 968px) {
+  /* Tablet Adjustments */
+  .hero h1 { font-size: 3rem; }
+  .hero-blob { width: 350px; height: 350px; }
+}
 
 @media (max-width: 768px) {
-  .hero { flex-direction: column; text-align: center; padding-top: 2rem; }
-  .hero-visual-container { width: 100%; margin-top: 3rem; }
+  /* Mobile Layout */
+  .hero { 
+    flex-direction: column-reverse; /* Puts image on top, text below? Or normal column */
+    /* Usually text first is better for SEO, but image first looks cool. Let's stick to standard column */
+    flex-direction: column; 
+    text-align: center; 
+    padding-top: 2rem;
+    min-height: auto;
+  }
+
+  .hero-content { width: 100%; }
+
+  .hero-visual-container { 
+    width: 100%; 
+    margin-top: 3rem; 
+    margin-bottom: 2rem;
+  }
+  
+  /* Shrink the blob for phones */
+  .hero-blob { 
+    width: 280px; 
+    height: 280px; 
+  }
+
+  .blob-text { font-size: 1.5rem; }
+
+  /* Smaller Fonts */
+  .hero h1 { font-size: 2.5rem; }
+  .hero p { font-size: 1rem; }
+  .section-header h2 { font-size: 2rem; }
+  
+  /* Waitlist Form Stacking */
   .waitlist-form { flex-direction: column; }
+  .waitlist-form button { width: 100%; }
+}
+
+@media (max-width: 480px) {
+  /* Small Phones */
+  .cta-btn { 
+    display: block; 
+    width: 100%; 
+    margin: 0 0 1rem 0; /* Stack buttons */
+    text-align: center;
+  }
+  
+  .hero h1 { font-size: 2rem; }
 }
