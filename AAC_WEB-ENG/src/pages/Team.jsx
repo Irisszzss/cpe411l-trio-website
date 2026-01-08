@@ -8,25 +8,25 @@ import '../styles/Team.css';
 const Team = () => {
   const members = [
     {
-      name: "Alex Rivera",
+      name: "Charles Larr Sanchez",
       role: "Hardware Lead",
       desc: "Designed the PCB and enclosure mechanisms.",
       color: "#2563eb"
     },
     {
-      name: "Sarah Chen",
+      name: "Aliyah Katrin Biado",
       role: "Software Architect",
       desc: "Built the React frontend and cloud integration.",
       color: "#0ea5e9"
     },
     {
-      name: "Jordan Lee",
+      name: "Allysa Mariz Hipolito",
       role: "Firmware Engineer",
       desc: "Optimized ESP32 Bluetooth latency.",
       color: "#2563eb"
     },
     {
-      name: "Casey Smith",
+      name: "Colleen Iris Jones",
       role: "Research Head",
       desc: "Conducted classroom usability testing.",
       color: "#0ea5e9"
