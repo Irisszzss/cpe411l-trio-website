@@ -4,6 +4,7 @@ import Layout from './components/Layout';
 import Home from './pages/Home';
 import About from './pages/About';
 import Waitlist from './pages/Waitlist';
+import Technology from './pages/Technology';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/technology" element={<Technology />} />
           <Route path="/waitlist" element={<Waitlist />} />
         </Routes>
       </Layout>
