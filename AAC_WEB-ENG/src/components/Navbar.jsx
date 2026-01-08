@@ -4,19 +4,12 @@ import '../styles/Navbar.css';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-
   return (
     <nav className="navbar">
       <div className="logo">SmartStroke.</div>
-      
-      {/* Mobile Menu Icon */}
       <div className="menu-toggle" onClick={() => setIsOpen(!isOpen)}>
-        <span className="bar"></span>
-        <span className="bar"></span>
-        <span className="bar"></span>
+        <span className="bar"></span><span className="bar"></span><span className="bar"></span>
       </div>
-
-      {/* Navigation Links */}
       <div className={`nav-links ${isOpen ? 'active' : ''}`}>
         <Link to="/" onClick={() => setIsOpen(false)}>Home</Link>
         <Link to="/about" onClick={() => setIsOpen(false)}>Features</Link>
@@ -26,5 +19,4 @@ const Navbar = () => {
     </nav>
   );
 };
-
 export default Navbar;
