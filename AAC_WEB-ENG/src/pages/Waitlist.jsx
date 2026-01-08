@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { ArrowRight, CheckCircle } from 'lucide-react';
 import '../styles/Home.css';
 
+/*Waitlist Page*/
 const Waitlist = () => {
   const [submitted, setSubmitted] = useState(false);
   return (

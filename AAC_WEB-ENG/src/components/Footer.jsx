@@ -2,6 +2,7 @@ import React from 'react';
 import { Github, Twitter, Linkedin } from 'lucide-react';
 import '../styles/Footer.css';
 
+/*Footer Component*/
 const Footer = () => (
   <footer className="footer">
     <div className="footer-content">
